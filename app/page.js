@@ -1,95 +1,33 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Card from "@/component/Card/Card";
+import "./Home.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="Home">
+      <div className="Title"><span className="SmallTitle">the</span> Artfolio</div>
+      <div className="Description">designDefined의 놀라운 포트폴리오를 지금 확인하세요</div>
+      <div className="Navigator">
+        <button className="Tab writing">
+          글
+        </button>
+        <button className="Tab design">
+          디자인
+        </button>
+        <button className="Tab programming">
+          개발
+        </button>
+      </div>
+      <div className="Contents">
+        <div className="CardContainer">
+          <Card title="HTML 뜯어보기" src="./bg_html.png" href="read/html"/>
+          <Card title="CSS, 어렵지 않아요!" src="./bg_css.png" href="read/css"/>
+          <Card title="프로젝트 1" src="./bg_1.png" href="read/0"/>
+          <Card title="프로젝트 2" src="./bg_2.png" href="read/1"/>
+          <Card title="프로젝트 3" src="./bg_3.png" href="read/2"/>
+          <Card title="프로젝트 4" src="./bg_4.png" href="read/3"/>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
+

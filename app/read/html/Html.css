@@ -1,0 +1,36 @@
+.Html{
+  padding:120px 80px;
+}
+
+.ToHome{
+  position: absolute;
+  top:20px;
+  right:20px;
+  font-size:24px;
+  font-weight: 800;
+  color:black;
+  
+}
+
+.HtmlTitle{
+  font-size:96px;
+  font-weight:100;
+}
+
+.HtmlSubtitle{
+  font-size:32px;
+  font-weight: 800;
+}
+
+.HtmlContents{
+  margin-top:120px;
+  font-size:24px;
+  line-height: 36px;
+}
+
+.HtmlSectionName{
+  margin-top:96px;
+  margin-bottom:48px;
+  font-size:32px;
+  font-weight: 600;
+}

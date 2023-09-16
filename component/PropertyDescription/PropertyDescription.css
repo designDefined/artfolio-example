@@ -1,0 +1,16 @@
+.PropertyDescription{
+  margin: 24px 0;
+}
+
+.PropertyDescriptionName{
+  font-weight:800;
+  background: rgb(68, 68, 68);
+  padding:5px 10px;
+  border-radius: 10px;
+  color:rgb(255, 255, 255);
+  transition: 0.2s ease;
+}
+
+.PropertyDescriptionName:hover{
+  background:rgb(198, 198, 198);
+}
