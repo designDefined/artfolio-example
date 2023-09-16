@@ -63,6 +63,25 @@ export default function Html () {
         <br/>
         <input type="range" />
         <div className="HtmlSectionName">리스트</div>
+        <PropertyDescription name="<ol>">
+          onrdered list의 줄임말입니다. 숫자가 붙어있는 리스트를 생성합니다.
+        </PropertyDescription>
+        <ol>
+          <li>첫번째 항목</li>
+          <li>두번째 항목</li>
+          <li>세번째 항목</li>
+        </ol>
+        <PropertyDescription name="<ul>">
+          unordered list의 줄임말입니다. 숫자가 붙어있지 않은 리스트를 생성합니다.
+        </PropertyDescription>
+        <ul>
+          <li>첫번째 항목</li>
+          <li>두번째 항목</li>
+          <li>세번째 항목</li>
+        </ul>
+        <PropertyDescription name="<li>">
+          list item의 줄임말로, ol이나 ul의 내부에서 리스트의 각 항목을 나타내는 요소입니다.
+        </PropertyDescription>
       </div>
   </main>
 }

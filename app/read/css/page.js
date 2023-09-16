@@ -17,53 +17,64 @@ export default function Css () {
     </div>
       <div className="HtmlContents">
         <p>
-          HTML은 역사가 오래된 언어로, 우리가 생각하는 웹을 구현할 수 있는 대부분의 요소를 기본적으로 갖추고 있습니다.
+          css의 기본 문법은 태그, 클래스명, 또는 id를 가리키는 선택자(selector)를 적은 뒤,
           <br/>
-          각 태그들에는 브라우저에서 제공하는 기본적인 스타일이 적용되어 있어, 따로 스타일을 지정하지 않아도 사용이 가능하며,
+          해당 선택자에 적용할 속성들을 중괄호로 묶어서 이어 적는 매우 간단한 방식입니다.
           <br/>
-          css와 javascript를 이용하여 자유로운 커스터마이징이 가능합니다.
+          따라서 css에 어떤 속성이 있는 지 잘 알기만 하면, 원하는 대로 자유롭게 스타일을 지정할 수 있습니다.
         </p>
         <p>
-          자주 사용되는 HTML 태그들을 함께 알아봅시다.
+          다음은 기능 별로 묶은 css의 대표적인 속성들입니다.
         </p>
-        <div className="HtmlSectionName">기본</div>
-        <PropertyDescription name="<div>">
-          div는 division의 약자로, 웹 페이지의 구역을 나누는 역할을 합니다. 기본적으로 div는 부모 요소의 가로 폭을 가득 채우게 됩니다. div에는 어떠한 스타일도 적용되어 있지 않습니다.
+        <div className="HtmlSectionName">크기 / 위치</div>
+        <PropertyDescription name="position, display">
+          요소의 쌓임-맥락을 결정하는 속성입니다. 요소가 자기 자리에 위치할 지, 또는 화면의 특정 지점에 위치할 지 결정합니다.
         </PropertyDescription>
-        <PropertyDescription name="<span>">
-          span은  div와 비슷하게 아무런 스타일도 적용되어 있지 않은 인라인 요소입니다. 한 줄 안에서 일부 글자에만 특정 스타일을 지정하기 위한 구분자로 사용합니다.
+        <PropertyDescription name="width, height">
+          요소의 가로, 세로 크기를 결정합니다. px, %(부모 크기), vw / vh(화면 크기) 등의 단위를 사용할 수 있습니다.
         </PropertyDescription>
-        <div className="HtmlSectionName">서식</div>
-        <PropertyDescription name="<h1> ~ <h6>">
-          h는 heading의 약자로, 제목을 작성하는 태그입니다. 뒤에 붙는 숫자가 커질수록 글자의 크기와 굵기가 감소합니다.
+        <PropertyDescription name="margin">
+          요소의 바깥 간격을 설정합니다.
         </PropertyDescription>
-        <h1>h1입니다</h1>
-        <h2>h2입니다</h2>
-        <h3>h3입니다</h3>
-        <h4>h4입니다</h4>
-        <h5>h5입니다</h5>
-        <h6>h6입니다</h6>
-        <PropertyDescription name="<p>">
-          p는 paragraph의 약자로, 문단을 나누는 역할을 합니다.
+        <PropertyDescription name="padding">
+          요소의 안쪽 여백을 설정합니다.
         </PropertyDescription>
-        <div className="HtmlSectionName">상호작용</div>
-        <PropertyDescription name="<button>">
-          사용자가 클릭할 수 있는 가장 기본적인 요소입니다. 클릭 시 발생할 동작을 지정할 수 있습니다.
+        <img src="https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png" style={{width:800}}/>
+
+        <div className="HtmlSectionName">폰트</div>
+        <PropertyDescription name="font-family">
+          글꼴을 지정합니다.
         </PropertyDescription>
-        <button onClick={()=> alert("버튼이 눌렸어요!")}>버튼 예시</button>
-        <PropertyDescription name="<a>">
-          다른 문서로 이동하는 하이퍼링크입니다. 이동할 주소를 href 속성에 지정합니다.
+        <PropertyDescription name="font-size">
+          글자의 크기를 변경합니다.
         </PropertyDescription>
-        <a href="https://naver.com">네이버로 이동</a>
-        <PropertyDescription name="<input>">
-          다양한 값을 입력할 수 있는 요소입니다. type 속성을 통해 입력할 값의 종류를 지정할 수 있습니다.
+        <PropertyDescription name="font-weight">
+          글자의 굵기를 변경합니다.
         </PropertyDescription>
-        <input type="text" placeholder="텍스트 입력"/>
-        <br/>
-        <input type="password" placeholder="비밀번호 입력"/>
-        <br/>
-        <input type="range" />
-        <div className="HtmlSectionName">리스트</div>
+        <PropertyDescription name="line-height">
+          줄 높이를 변경합니다.
+        </PropertyDescription>
+        <PropertyDescription name="color">
+          글자의 색상을 변경합니다. rgba, hsla, hex 등을 사용할 수 있습니다. 기본값은 검정입니다.
+        </PropertyDescription>
+        <PropertyDescription name="text-align">
+          left, right, center, justify 등 글자의 정렬 방식을 변경합니다.
+        </PropertyDescription>
+        
+        <div className="HtmlSectionName">배경 / 테두리</div>
+        <PropertyDescription name="background">
+          요소의 배경을 지정합니다. 색상, 이미지, 그라데이션 등을 사용할 수 있습니다.
+        </PropertyDescription>
+        <PropertyDescription name="border">
+          요소의 테두리를 지정합니다. 굵기와 색상, 타입을 지정할 수 있습니다.
+        </PropertyDescription>
+        <PropertyDescription name="border-radius">
+          테두리의 둥근 정도를 지정합니다.
+        </PropertyDescription>
+        <PropertyDescription name="box-shadow">
+          요소의 배경 그림자를 지정합니다.
+        </PropertyDescription>
+        
       </div>
   </main>
 }
