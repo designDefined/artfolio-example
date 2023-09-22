@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="Home">
       <div className="Title"><span className="SmallTitle">the</span> Artfolio</div>
-      <div className="Description">designDefined의 놀라운 포트폴리오를 지금 확인하세요</div>
+      <div className="Description">designDefined의 놀랍지 않은 포트폴리오를 지금 확인하세요</div>
       <div className="Navigator">
         <button className="Tab writing">
           글
