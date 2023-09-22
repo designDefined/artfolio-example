@@ -23,9 +23,13 @@ export default function Css () {
           <br/>
           따라서 css에 어떤 속성이 있는 지 잘 알기만 하면, 원하는 대로 자유롭게 스타일을 지정할 수 있습니다.
         </p>
+        <div className="HtmlSectionName">css의 사용법</div>
+        <p>css는 선택자 + 중괄호로 감싸진 속성들로 표현할 수 있습니다.</p>
+
         <p>
           다음은 기능 별로 묶은 css의 대표적인 속성들입니다.
         </p>
+
         <div className="HtmlSectionName">크기 / 위치</div>
         <PropertyDescription name="position, display">
           요소의 쌓임-맥락을 결정하는 속성입니다. 요소가 자기 자리에 위치할 지, 또는 화면의 특정 지점에 위치할 지 결정합니다.
@@ -48,7 +52,7 @@ export default function Css () {
         <PropertyDescription name="font-size">
           글자의 크기를 변경합니다.
         </PropertyDescription>
-        <PropertyDescription name="font-weight">
+        <PropertyDescription name="font-weight">x 
           글자의 굵기를 변경합니다.
         </PropertyDescription>
         <PropertyDescription name="line-height">

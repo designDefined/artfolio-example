@@ -7,4 +7,5 @@ export default function PropertyDescription ({name, children}) {
       <code className="PropertyDescriptionName">{name}</code>: {children}
     </div>
   )
+  
 }

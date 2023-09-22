@@ -35,3 +35,39 @@
   opacity:1;
   transform: translateY(0px);
 }
+
+.ModalContainer{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.Modal{
+  width: 500px;
+  height: 300px;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.3);
+  animation: reveal 1s ease;
+}
+
+@keyframes reveal {
+  0%{
+    transform: translate(0, 300px) scale(0.5) rotateZ(-90deg) rotateY(-90deg);
+    opacity:0;
+  }
+  100%{
+    transform: translate(0, 0px) scale(1) rotateZ(0) rotateY(0deg);
+    opacity:1;
+  }
+}

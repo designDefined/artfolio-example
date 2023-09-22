@@ -1,5 +1,6 @@
 import Card from "@/component/Card/Card";
 import "./Home.css";
+import ModalCard from "@/component/Card/ModalCard";
 
 export default function Home() {
   return (
@@ -21,10 +22,10 @@ export default function Home() {
         <div className="CardContainer">
           <Card title="HTML 뜯어보기" src="./bg_html.png" href="read/html"/>
           <Card title="CSS, 어렵지 않아요!" src="./bg_css.png" href="read/css"/>
-          <Card title="프로젝트 1" src="./bg_1.png" href="read/0"/>
-          <Card title="프로젝트 2" src="./bg_2.png" href="read/1"/>
-          <Card title="프로젝트 3" src="./bg_3.png" href="read/2"/>
-          <Card title="프로젝트 4" src="./bg_4.png" href="read/3"/>
+          <ModalCard title="프로젝트 1" src="./bg_1.png">준비중입니다!</ModalCard>
+          <ModalCard title="프로젝트 2" src="./bg_2.png">준비중입니다!</ModalCard>
+          <ModalCard title="프로젝트 3" src="./bg_3.png">준비중입니다!</ModalCard>
+          <ModalCard title="프로젝트 4" src="./bg_4.png">준비중입니다!</ModalCard>
         </div>
       </div>
     </div>
