@@ -18,8 +18,10 @@ export default function Home() {
               text: '공유하기 내용',
               url: 'https://naver.com',
             })
-            .then(() => console.log('공유 성공'))
-            .catch((error) => console.log('공유 실패', error));
+            .then(() => alert('공유 성공'))
+            .catch((error) => alert('공유 실패', error));
+          } else {
+            alert("공유하기를 지원하지 않는 브라우저입니다.")
           }
         }}>
           글
