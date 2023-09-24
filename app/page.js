@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "@/component/Card/Card";
 import "./Home.css";
 import ModalCard from "@/component/Card/ModalCard";
@@ -6,9 +8,20 @@ export default function Home() {
   return (
     <div className="Home">
       <div className="Title"><span className="SmallTitle">the</span> Artfolio</div>
+      
       <div className="Description">designDefined의 놀랍지 않은 포트폴리오를 지금 확인하세요</div>
       <div className="Navigator">
-        <button className="Tab writing">
+        <button className="Tab writing" onClick={()=>{
+          if (navigator.share) {
+            navigator.share({
+              title: '공유하기 제목',
+              text: '공유하기 내용',
+              url: 'https://naver.com',
+            })
+            .then(() => console.log('공유 성공'))
+            .catch((error) => console.log('공유 실패', error));
+          }
+        }}>
           글
         </button>
         <button className="Tab design">
